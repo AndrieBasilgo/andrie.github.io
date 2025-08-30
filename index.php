@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration</h2>
+        <img src="assets/img/logo.png" alt="cite logo">
+        <p>CITE Technical Institute Inc.</p>
+        
+        <form action="register.php" method="POST" class="registration-form">
+
+            <label for="first-name">First Name *</label>
+            <input type="text" id="first-name" name="first-name" required placeholder="Enter your first name">
+
+            <label for="middle-name">Middle Name (optional)</label>
+            <input type="text" id="middle-name" name="middle-name" placeholder="Enter your middle name">
+
+            <label for="last-name">Last Name *</label>
+            <input type="text" id="last-name" name="last-name" required placeholder="Enter your last name">
+
+            <label for="suffix">Suffix (optional)</label>
+            <select id="suffix" name="suffix">
+                <option value="" selected>None</option>
+                <option value="Jr.">Jr.</option>
+                <option value="Sr.">Sr.</option>
+                <option value="II">II</option>
+                <option value="III">III</option>
+                <option value="IV">IV</option>
+            </select>
+
+            <label for="batch">Batch *</label>
+            <select id="batch" name="batch" required>
+                <option value="" disabled selected>Select your batch</option>
+            </select>
+
+            <label for="technology">Technology *</label>
+            <select id="technology" name="technology" required>
+                <option value="" disabled selected>Select your technology</option>
+                <option value="computer">Computer</option>
+                <option value="electrical">Electrical</option>
+                <option value="mechanical">Mechanical</option>
+                <option value="electronics">Electronics</option>
+            </select>
+
+            <label for="id-number">ID Number *</label>
+            <input type="text" id="id-number" name="id-number" required placeholder="Enter ID number">
+
+            <label for="contact-number">Contact Number (optional)</label>
+            <input type="tel" id="contact-number" name="contact-number" pattern="09[0-9]{9}" placeholder="Enter 11-digit number (must start with 09)">
+
+            <label for="email">Email (optional)</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Gmail (example@gmail.com)">
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="assets/js/script.js" defer></script>
+</body>
+</html>
