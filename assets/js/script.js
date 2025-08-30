@@ -27,10 +27,13 @@ document.addEventListener("DOMContentLoaded", function () {
             alert('Please enter a valid contact number starting with 09 and 11 digits long.');
             return;
         }
-
-        if (email.value && !email.value.endsWith("@gmail.com")) {
-            alert('Please enter a valid Gmail address (must end with @gmail.com).');
-            return;
+        
+        if (email.value) {
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email.value)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
         }
 
         alert('Registration Successful!');
