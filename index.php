@@ -54,7 +54,7 @@
             <input type="tel" id="contact-number" name="contact-number" pattern="09[0-9]{9}" placeholder="Enter 11-digit number (must start with 09)">
 
             <label for="email">Email (optional)</label>
-            <input type="email" id="email" name="email" placeholder="Enter your Gmail (example@gmail.com)">
+            <input type="email" id="email" name="email" placeholder="Enter your email">
 
             <button type="submit">Register</button>
         </form>
